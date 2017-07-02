@@ -1,0 +1,30 @@
+{
+  "name": "node-app-errors",
+  "version": "0.0.2",
+  "description": "Helper for handling app errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachalovsky/node-application-errors.git"
+  },
+  "keywords": [
+    "node",
+    "application",
+    "errors",
+    "validation",
+    "express",
+    "exception",
+    "error",
+    "catch",
+    "throw"
+  ],
+  "author": "kachalovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kachalovsky/node-app-errors/issues"
+  },
+  "homepage": "https://github.com/kachalovsky/node-app-errors#readme"
+}
