@@ -30,7 +30,11 @@ class ApplicationError {
 
     static generateResourceErrors(modelName) {
         return ({
-          CREATE: new this({status: 500, message: `Internal error with ${modelName} creating.`})
+          CREATE: new this({status: 500, message: `Error with ${modelName} creating.`}),
+          FETCH: new this({status: 500, message: `Error around ${modelName} fetching.`}),
+          UPDATE: new this({status: 500, message: `Error with ${modelName} updating.`}),
+          DELETE: new this({status: 500, message: `Error with ${modelName} deleting.`}),
+          NOT_FOUND: new this({status: 404, message: `${modelName} not found.`})
         })
     }
 }
