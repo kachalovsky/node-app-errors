@@ -1,6 +1,6 @@
 {
   "name": "node-app-errors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Helper for handling app errors",
   "main": "index.js",
   "scripts": {
