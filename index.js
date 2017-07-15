@@ -16,12 +16,13 @@ class ApplicationError {
 
     static screen(err, otherwise) {
         if (err && err.IS_APPLICATION_ERROR) return err;
+        otherwise = (otherwise.IS_APPLICATION_ERROR) ? otherwise : new this(otherwise);
         if (err) {
             let history = otherwise.history.slice() || [];
             history.push(err);
             return new this(otherwise.context || otherwise, history);
         }
-        return otherwise;
+        return otherwise
     }
 
     static reject(err, otherwise) {
